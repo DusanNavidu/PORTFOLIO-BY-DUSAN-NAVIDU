@@ -7,44 +7,67 @@
     <meta name="Keywords" content="HTML, html, CSS, css, Javascript, javascript, JAVASCRIPT, JS, portfolio, Portfolio, PORTFOLIO, Dusan Navidu, DUSAN NAVIDU, DUSAN, Dusan, dusan"/>
     <title>Portfolio by Dusan navidu</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/Service.css">
 </head>
 <body>
 <header id="header" class="header">
     <nav>
-        <div>
-            <img 
-                src="/assests/logo/Untitled Project(7).jpg" 
-                alt="Portfolio logo (DU$AN)"
-                style="width: 100px; height: 30px; object-fit: cover;">
-        </div>
-        <div id="nav-menu" class="nav-menu">
-            <ul class="nav-list">
-                <a href="#home"><i class="fa-solid fa-house"></i>  Home</a>
-                <a href="#about"><i class="fa-solid fa-address-card"></i>  About</a>
-                <a href="#service"><i class="fa-solid fa-building-circle-check"></i>  Service</a>
-                <a href="#resume"><i class="fa-solid fa-briefcase"></i>  Resume</a>
-                <a href="#projects"><i class="fa-solid fa-list-check"></i>  Projects</a>
-                <a href="#contact"><i class="fa-solid fa-phone"></i>  Contact</a>
-            </ul>
-        </div>
-        <div>
-            <a href="https://github.com" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://lk.linkedin.com/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://web.facebook.com" target="_blank">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>    
-            <a href="#contact">
-                <button type="button">
-                    Let’s talk
-                </button>
-            </a>
+        <div id="headBar" class="headBar">
+            <div>
+                <img id="logoImg"
+                    src="/assests/logo/Untitled Project(7).jpg" 
+                    alt="Portfolio logo (DU$AN)">
+            </div>
+            <div class="nav-menu">
+                <ul id="head-list">
+                    <li><a id="head-bar-list" href="#home">
+                        <img id="head-icon" src="/assests/icons/home-icon-silhouette.png" alt="home icon">
+                        Home</a>
+                    </li>
+                    <li><a id="head-bar-list" href="#about">
+                        <img id="head-icon" src="/assests/icons/id-card.png" alt="about icon">
+                        About</a>
+                    </li>
+                    <li><a id="head-bar-list" href="#service">
+                        <img id="head-icon" src="/assests/icons/customer-service.png" alt="service icon">
+                        Service</a>
+                    </li>
+                    <li><a id="head-bar-list" href="#resume">
+                        <img id="head-icon" src="/assests/icons/working-time.png" alt="Resume icon">
+                        Resume</a>
+                    </li>
+                    <li><a id="head-bar-list" href="#projects">
+                        <img id="head-icon" src="/assests/icons/project.png" alt="projects icon">
+                        Projects</a>
+                    </li>
+                    <li><a id="head-bar-list" href="#contact">
+                        <img id="head-icon" src="/assests/icons/contact-mail.png" alt="contact icon">
+                        Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="contacts">
+                <a id="Social_icon" href="https://github.com" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a id="Social_icon" href="https://lk.linkedin.com/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a id="Social_icon" href="https://web.facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a id="Social_icon" href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>    
+                <a id="button_contact" href="#contact">
+                    <button id="talk-button" type="button">
+                        Let’s talk
+                    </button>
+                </a>
+            </div>
         </div>
     </nav>
 </header>
@@ -53,18 +76,20 @@
 <main>
 <!-- ====================Home=================== -->
     <section id="home" class="home">
-        <div>
-            <img src="/assests/images/DSC_0672-removebg-preview - Copy.png" alt="Dusan Navidu home image">
-        </div>
-        <div>
-            <p>
-                WELCOME TO MY PORTFOLIO 
-            </p>
-            <h1>
-                I’m DUSAN NAVIDU 
-                <br/>
-                SOFTWARE ENGINEER.
-            </h1>
+        <div class="home-container">
+            <div id="img-circle" class="img-circle">
+                <img class="home-image" id="home-image" src="/assests/images/DSC_0672-removebg-preview - Copy.png" alt="Dusan Navidu home image">
+            </div>
+            <div class="home-texts">
+                <p id="welcome">
+                    WELCOME TO MY PORTFOLIO 
+                </p>
+                <h1 class="home-text">
+                    <span id="white-text">I’m DUSAN NAVIDU</span> 
+                    <br/>
+                    <span id="blue-text">SOFTWARE ENGINEER.</span>
+                </h1>
+            </div>
         </div>
     </section>
 
@@ -72,31 +97,32 @@
      <section id="about" class="about">
         <div>
             <h2>About me</h2>
-            <p>
+            <p class="about-paragraph">
                 Hello, I am G.Dusan Navidu, I am 21 years old, I am currently studying in a software engineering institute to become a professional software engineer. I hope to become a software engineer soon.
             </p>
-            <h4>
-                <u>
-                    Main Skils
-                </u>
-            </h4>
-            <p>
-                <ul>
-                    User experience design - UI/UX
-                    Delight the user and make it work.
-                    <br>
-                    Web and User Interface Design - Development
-                    Web Sites, Web experience
-                    <br>    
-                    Software - Development
-                    Data Handling, Front-end, back-end, POS System
+
+            <div class="">
+                <h4><u>Main Skils</u></h4>
+                <h4><u>Education & Certification</u></h4>
+            </div>
+            
+            
+            <div>
+                <ul id="text">
+                    <li>
+                        <b>User experience design -</b> UI/UX
+                        Delight the user and make it work.
+                    </li>
+                    <li>
+                        <b>Web and User Interface Design -</b> Development
+                        Web Sites, Web experience
+                    </li>
+                    <li>
+                        <b>Software - </b>Development
+                        Data Handling, Front-end, back-end, POS System
+                    </li>
                 </ul>
-            </p>
-            <h4>
-                <u>
-                    Education & Certification
-                </u>
-            </h4>
+            </div>
             <p>
                 <ul>
                     Diploma in Computer Science - 
@@ -114,47 +140,21 @@
                     SoloLearn 2023
                 </ul>
             </p>
-            <img src="/assests/images/WhatsApp_Image_2025-01-14_at_20.32.49_f7c91466-removebg-preview.png" 
-            alt="Portfolio owner Dusan navidu image">
+            <div id="about-img">
+                <img src="/assests/images/WhatsApp_Image_2025-01-14_at_20.32.49_f7c91466-removebg-preview.png" 
+                alt="Portfolio owner Dusan navidu image">
+            </div>
         </div>
      </section>
 
     <!-- ========================= Service =========== -->
     <section id="service" class="service">
         <h2>Service</h2>
-        <div>
-            <i class="fa-solid fa-globe"></i>
-            <h4>
-                Website Design
-            </h4>
-            <div>
-                <p>
-                    This includes creating user-friendly interfaces and ensuring compatibility across different devices and browsers.The goal is to create a visually appealing and functional website that effectively communicates the desired message to its visitors
-                </p>    
-            </div>
+
+        <div class="service-container">
+
         </div>
-        <div>
-            <i class="fa-regular fa-window-restore"></i>
-            <h4>
-                Stand Alone Application
-            </h4>
-            <div>
-                <p>
-                    This includes creating user-friendly interfaces and ensuring compatibility across different devices and browsers.The goal is to create a visually appealing and functional website that effectively communicates the desired message to its visitors
-                </p>
-            </div>
-        </div>
-        <div>
-            <i class="fa-solid fa-wand-magic-sparkles"></i>
-            <h4>
-                UI/UX Design
-            </h4>
-            <div>
-                <p>
-                    Create Modern Enterprise Application that reliable and consistency with awesome ideas.
-                </p>
-            </div>
-        </div>
+        
     </section>
     <!-- =================== Resume =================== -->
      <section id="resume" class="resume">
