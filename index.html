@@ -11,15 +11,16 @@
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/Service.css">
+    <link rel="stylesheet" href="/css/Projects.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/contact.css">
 </head>
 <body>
 <header id="header" class="header">
     <nav>
         <div id="headBar" class="headBar">
             <div>
-                <img id="logoImg"
-                    src="/assests/logo/Untitled Project(7).jpg" 
-                    alt="Portfolio logo (DU$AN)">
+                <p><span class="logo-text1">DU</span><span class="logo-text2">$AN</span></p>
             </div>
             <div class="nav-menu">
                 <ul id="head-list">
@@ -146,14 +147,47 @@
             </div>
         </div>
      </section>
-
     <!-- ========================= Service =========== -->
     <section id="service" class="service">
         <h2>Service</h2>
-
-        <div class="service-container">
-
+        <div class="servicers">
+            <div class="service-container">
+                <div class="service-card">
+                    <div class="service-card-head">
+                        <img src="/assests/icons/internet.png" alt="web icon">
+                        <p class="service-card-title">Website Design</p>
+                    </div>
+                    <p class="service-card-details">
+                        This includes creating user-friendly interfaces and ensuring compatibility across different devices and browsers.The
+                        goal is to create a visually appealing and functional website that effectively communicates the desired message to its
+                        visitors
+                    </p>
+                </div>
+    
+                <div class="service-card">
+                    <div class="service-card-head">
+                        <img src="/assests/icons/categories.png" alt="application icon">
+                        <p class="service-card-title">Stand Alone Application</p>
+                    </div>
+                    <p class="service-card-details">
+                        This includes creating user-friendly interfaces and ensuring compatibility across different devices and browsers.The
+                        goal is to create a visually appealing and functional website that effectively communicates the desired message to its
+                        visitors
+                    </p>
+                </div>
+    
+                <div class="service-card">
+                    <div class="service-card-head">
+                        <img src="/assests/icons/art.png" alt="ui/ux icon">
+                        <p class="service-card-title">UI/UX Design</p>
+                    </div>
+                    <p class="service-card-details">
+                        Create Modern Enterprise Application that reliable and consistency with awesome ideas.
+                    </p>
+                </div>
+            </div>
         </div>
+        
         
     </section>
     <!-- =================== Resume =================== -->
@@ -224,99 +258,103 @@
      <!-- =================Projects ================= -->
       <section id="projects" class="projects">
         <h2>Projects</h2>
-        <div>
-            <div>
-                <img src="/assests/images/Untitled Project(2).jpg" 
-                alt="Shaan fashion home page image"
-                style="width: 250px; height: 300px;">
-                <p>
-                    A POS system was created for the clothing store called SHAAN FASHION.
-                </p>
-            </div>
-            <div>
-                <img src="/assests/images/unnamed.png" 
-                alt="Tic tac toe game wallpaper"
-                style="width: 250px; height: 300px;">
-                <p>
-                    Making a tic tac toe game
-                </p>
-            </div>
-            <div>
-                <img src="/assests/images/51dadeba-428e-4265-ba8e-bfb2bcb0cbda-cover.png" 
-                alt="my Portfolio image"
-                style="width: 250px; height: 300px;">
-                <p>
-                    Creating a portfolio website
-                </p>
+        <div class="project-sets">
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="/assests/images/Untitled Project(2).jpg" 
+                    alt="Shaan fashion home page image">
+                    <p>
+                        A POS system was created for the clothing store called SHAAN FASHION.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <img src="/assests/images/unnamed.png" 
+                    alt="Tic tac toe game wallpaper">
+                    <p>
+                        Making a tic tac toe game
+                    </p>
+                </div>
+                <div class="project-card">
+                    <img src="/assests/images/51dadeba-428e-4265-ba8e-bfb2bcb0cbda-cover.png" 
+                    alt="my Portfolio image">
+                    <p>
+                        Creating a portfolio website
+                    </p>
+                </div>
             </div>
         </div>
       </section>
       <!-- ================= Contact =============== -->
        <section id="contact" class="contact">
             <h2>Hire me</h2>
-            <div>
-                <img src="/assests/images/handshake2-800x450.jpg" 
-                alt="handshake two mens"
-                style="width: 363.72px; height: 188.07px;">
-                <p>
-                    I am Available for Web Designing & Web 
+            <div class="contacting-aria">
+                <div class="contract-box">
+                    <img src="/assests/images/handshake2-800x450.jpg" 
+                    alt="handshake two mens">
+                    <p>
+                        I am Available for Web Designing & Web 
+                        <br/>
+                        Development work.
+                        <br/> 
+                        Connect With me email :
+                        <br/>
+                        <a href="mailto:navidu200210@gmail.com" target="_blank"><b><u>navidu200210@gmail.com</u></b></a>  
+                    </p>
+                </div>
+                <div class="contact-form">
+                    <form action="/submit-form">
+                        <div class="input">
+                            <label for="your name">Your name</label>
+                            <br/>
+                            <input type="text" name="your name" required placeholder="ex: Davide Miller">
+                        </div>
+                        <div class="input">
+                            <label for="your email">Your email</label>
+                            <br/>
+                            <input type="text" name="your email" required placeholder="ex: examlple@gmail.com ">    
+                        </div>
+                        <div class="input">
+                            <label for="write subject">write subject</label>
+                            <br/>
+                            <input type="text" name="write subject" required placeholder="ex: we have job vacancy ">    
+                        </div>
+                        <div class="input">
+                            <label for="your massage">your massage</label>
+                        <br/>
+                            <textarea name="your massage" id="massage"
+                                placeholder="ex: input your text"
+                                required></textarea>
+                        </div>
+                        <br/>
+                        <button onclick="alert('Submit sucsesful')">Submit</button>
+                    </form>
                     <br/>
-                    Development work.
-                    <br/> 
-                    Connect With me email :
-                    <br/>
-                    <a href="mailto:navidu200210@gmail.com" target="_blank"><b><u>navidu200210@gmail.com</u></b></a>  
-                </p>
-            </div>
-            <div>
-                <form action="/submit-form">
-                    <label for="your name">Your name</label>
-                    <br/>
-                    <input type="text" name="your name" required placeholder="ex: Davide Miller">
-                    <br/>
-                    <label for="your email">Your email</label>
-                    <br/>
-                    <input type="text" name="your email" required placeholder="ex: examlple@gmail.com ">
-                    <br/>
-                    <label for="write subject">write subject</label>
-                    <br/>
-                    <input type="text" name="write subject" required placeholder="ex: we have job vacancy ">
-                    <br/>
-                    <label for="your massage">your massage</label>
-                    <br/>
-                    <textarea name="your massage" id="massage"
-                    placeholder="ex: input your text"
-                    cols="40"
-                    required></textarea>
-                    <br/>
-                    <button onclick="alert('Submit sucsesful')">Submit</button>
-                </form>
-                <br/>
+                </div>
             </div>
         </section>
+    </main>
 
-        <footer>
-            <img src="/assests/logo/Untitled Project(7).jpg" 
-            alt="portfolio logo (DU$AN)"
-            style="width: 70px; height: 20px;">
+    <footer>
+        <div>
+            <p><span class="text1">DU</span><span class="text2">$AN</span></p>
+        </div>
 
+        <div class="social-icon">
             <a href="https://github.com" target="_blank">
-                <i class="fa-brands fa-github"></i>
+                <img src="/assests/icons/github.png" alt="">
             </a>
             <a href="https://lk.linkedin.com/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
+                <img src="/assests/icons/facebook.png" alt="">
             </a>
             <a href="https://web.facebook.com" target="_blank">
-                <i class="fa-brands fa-facebook"></i>
+                <img src="/assests/icons/linkedin.png" alt="">
             </a>
             <a href="https://www.instagram.com/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
+                <img src="/assests/icons/instagram.png" alt="">
             </a> 
-
-            <p>
-                &copy; 2025. All rights reserved.
-            </p>
-        </footer>
-</main>
+        </div>
+        
+        <p class="ending">&copy; 2025. All rights reserved.</p>
+    </footer>
 </body>
 </html>
