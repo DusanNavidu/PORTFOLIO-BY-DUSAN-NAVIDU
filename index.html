@@ -6,71 +6,43 @@
     <meta name="description" content="This is a home page to the portfolio.">
     <meta name="Keywords" content="HTML, html, CSS, css, Javascript, javascript, JAVASCRIPT, JS, portfolio, Portfolio, PORTFOLIO, Dusan Navidu, DUSAN NAVIDU, DUSAN, Dusan, dusan"/>
     <title>Portfolio by Dusan navidu</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/coding-Tools-&-IDEs.css">
     <link rel="stylesheet" href="/css/Service.css">
+    <link rel="stylesheet" href="/css/resume.css">
     <link rel="stylesheet" href="/css/Projects.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/contact.css">
 </head>
 <body>
 <header id="header" class="header">
-    <nav>
-        <div id="headBar" class="headBar">
-            <div>
-                <p><span class="logo-text1">DU</span><span class="logo-text2">$AN</span></p>
-            </div>
-            <div class="nav-menu">
-                <ul id="head-list">
-                    <li><a id="head-bar-list" href="#home">
-                        <img id="head-icon" src="/assests/icons/home-icon-silhouette.png" alt="home icon">
-                        Home</a>
-                    </li>
-                    <li><a id="head-bar-list" href="#about">
-                        <img id="head-icon" src="/assests/icons/id-card.png" alt="about icon">
-                        About</a>
-                    </li>
-                    <li><a id="head-bar-list" href="#service">
-                        <img id="head-icon" src="/assests/icons/customer-service.png" alt="service icon">
-                        Service</a>
-                    </li>
-                    <li><a id="head-bar-list" href="#resume">
-                        <img id="head-icon" src="/assests/icons/working-time.png" alt="Resume icon">
-                        Resume</a>
-                    </li>
-                    <li><a id="head-bar-list" href="#projects">
-                        <img id="head-icon" src="/assests/icons/project.png" alt="projects icon">
-                        Projects</a>
-                    </li>
-                    <li><a id="head-bar-list" href="#contact">
-                        <img id="head-icon" src="/assests/icons/contact-mail.png" alt="contact icon">
-                        Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="contacts">
-                <a id="Social_icon" href="https://github.com" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a id="Social_icon" href="https://lk.linkedin.com/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a id="Social_icon" href="https://web.facebook.com" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a id="Social_icon" href="https://www.instagram.com/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>    
-                <a id="button_contact" href="#contact">
-                    <button id="talk-button" type="button">
-                        Let’s talk
-                    </button>
-                </a>
-            </div>
-        </div>
+    <div>
+        <p><span class="logo-text1">DU</span><span class="logo-text2">$AN</span></p>
+    </div>
+    <nav class="navigation-sections">
+        <ul class="nav-links-1">
+            <li><a href="#home"><img src="/assests/icons/home-icon-silhouette.png" alt=""> Home</a></li>
+            <li><a href="#about"><img src="/assests/icons/id-card.png" alt="">About</a></li>
+            <li><a href="#service"><img src="/assests/icons/man-working-on-a-laptop-from-side-view.png" alt="">Service</a></li>
+            <li><a href="#resume"><img src="/assests/icons/working-time.png" alt="">Resume</a></li>
+            <li><a href="#projects"><img src="/assests/icons/project.png" alt="">Project</a></li>
+            <li><a href="#contact"><img src="/assests/icons/contact-mail.png" alt="">Contact</a></li>
+        </ul>
     </nav>
+    <div class="social">
+        <nav class="navigation-social">
+            <ul class="nav-links-2">
+                <li><img src="/assests/icons/github.png" alt=""></li>
+                <li><img src="/assests/icons/linkedin.png" alt=""></li>
+                <li><img src="/assests/icons/facebook.png" alt=""></li>
+                <li><img src="/assests/icons/instagram.png" alt=""></li>
+            </ul>
+        </nav>
+        <button>Let's Talk</button>
+    </div>
+            
 </header>
 
 <!-- ====================Main=================== -->
@@ -95,58 +67,139 @@
     </section>
 
     <!-- ================About me ================= -->
-     <section id="about" class="about">
-        <div>
-            <h2>About me</h2>
-            <p class="about-paragraph">
-                Hello, I am G.Dusan Navidu, I am 21 years old, I am currently studying in a software engineering institute to become a professional software engineer. I hope to become a software engineer soon.
-            </p>
+    <section id="about" class="about">
+        <h2>About</h2> 
+        <p class="about-me-paragraph-1">
+            Hello, I am G.Dusan Navidu, I am 21 years old, I am currently studying in a software engineering institute to become a
+            professional software engineer. I hope to become a software engineer soon.
+        </p>
+        <p class="about-me-paragraph-2">
+            I have the ability to work with Java, JavaScript, HTML, CSS, and MySQL. I have experience in web design, standalone
+            application development, and web development. I primarily use IntelliJ IDEA and VS Code as my development tools.
+            Additionally, I work with frameworks like Bootstrap to create visually appealing and responsive web interfaces. My
+            knowledge extends to both front-end and back-end development, allowing me to build full-stack applications. I focus on
+            developing high-quality, scalable solutions that meet user needs. Whether it's designing interactive websites or
+            building robust software applications, I am dedicated to delivering efficient and well-structured projects.
+        </p>
+    </section>
 
-            <div class="">
-                <h4><u>Main Skils</u></h4>
-                <h4><u>Education & Certification</u></h4>
+    <!-- =============== Coding Tools & IDEs ==========  -->
+    <section id="coding-tools-IDEs" class="coding-tools-IDEs">
+        <h2>Coding Tools & IDEs</h2>
+        <div class="section">
+            <img class="section-icon" src="/assests/skil-icons/programming.png" alt="programming desc top icon">
+            <p>🚀   Coding</p>
+        </div>
+        <div class="line-horizontal"></div>
+
+        <div class="section-set">
+            <div class="icon-data">
+                <img class="code-icon" id="code-icon-1" src="/assests/skil-icons/java.png" alt="java icon">
+                <p class="code-name" id="code-icon-name-1">JAVA</p>
             </div>
-            
-            
-            <div>
-                <ul id="text">
-                    <li>
-                        <b>User experience design -</b> UI/UX
-                        Delight the user and make it work.
-                    </li>
-                    <li>
-                        <b>Web and User Interface Design -</b> Development
-                        Web Sites, Web experience
-                    </li>
-                    <li>
-                        <b>Software - </b>Development
-                        Data Handling, Front-end, back-end, POS System
-                    </li>
-                </ul>
+            <div class="icon-data">
+                <img class="code-icon" id="code-icon-2" src="/assests/skil-icons/html-5(1).png" alt="html icon">
+                <p class="code-name" id="code-icon-name-2">HTML</p>
             </div>
-            <p>
-                <ul>
-                    Diploma in Computer Science - 
-                    <br/>
-                    IJSE 2022-2024
-                    <br/>
-                    <br/>
-                    Gold Badge in Java - 
-                    <br/>
-                    HackerRank 2022
-                    <br/>
-                    <br/>
-                    Certificate Course in Java , HTML, & MYSQL -
-                    <br/> 
-                    SoloLearn 2023
-                </ul>
-            </p>
-            <div id="about-img">
-                <img src="/assests/images/WhatsApp_Image_2025-01-14_at_20.32.49_f7c91466-removebg-preview.png" 
-                alt="Portfolio owner Dusan navidu image">
+            <div class="icon-data">
+                <img class="code-icon" id="code-icon-3" src="/assests/skil-icons/css-3.png" alt="css icon">
+                <p class="code-name" id="code-icon-name-3">CSS</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon" id="code-icon-4" src="/assests/skil-icons/java-script.png" alt="java script icon">
+                <p class="code-name" id="code-icon-name-4">JAVA SCRIPT</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon" id="code-icon-5" src="/assests/skil-icons/mysql.png" alt="my sql icon">
+                <p class="code-name" id="code-icon-name-5">MY SQL</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon" id="code-icon-6" src="/assests/skil-icons/python.png" alt="python icon">
+                <p class="code-name" id="code-icon-name-6">PYTHON</p>
             </div>
         </div>
-     </section>
+
+        <div class="section">
+            <img class="section-icon" src="/assests/skil-icons/editor.png" alt="Tools & IDEs icon">
+            <p>⚙️  Tools & IDEs</p>
+        </div>
+        <div class="line-horizontal"></div>
+        <div class="section-set">
+            <div class="icon-data">
+                <img class="code-icon-1" id="Tools-icon-1" src="/assests/skil-icons/intellij idea.png" alt="intellij idea icon">
+                <p class="Tools-name" id="tools-name-1">INTELLIJ IDEA</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon-1" id="Tools-icon-2" src="/assests/skil-icons/intellij idea community.png" alt="intellij idea community icon">
+                <p class="Tools-name" id="tools-name-2">INTELLIJ IDEA COMMUNITY</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon-1" id="Tools-icon-3" src="/assests/skil-icons/Apache_NetBeans_Logo.svg.png" alt="Apache_NetBeans icon">
+                <p class="Tools-name" id="tools-name-3">APACHE NETBEANS</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon-1" id="Tools-icon-4" src="/assests/skil-icons/vs code.png" alt="vs code icon">
+                <p class="Tools-name" id="tools-name-4">VS CODE</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon-1" id="Tools-icon-5" src="/assests/skil-icons/figma.png" alt="figma icon">
+                <p class="Tools-name" id="tools-name-5">FIGMA</p> 
+            </div>
+            <div class="icon-data">
+                <img class="code-icon-1" id="Tools-icon-6" src="/assests/skil-icons/bootstrap.png" alt="bootstrap icon">
+                <p class="Tools-name" id="tools-name-6">BOOTSTRAP</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon-1" id="Tools-icon-7" src="/assests/skil-icons/fire base.png" alt="fire base icon">
+                <p class="Tools-name" id="tools-name-7">FIREBASE</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon-1" id="Tools-icon-8" src="/assests/skil-icons/geany.png" alt="geany icon">
+                <p class="Tools-name" id="tools-name-8">GEANY</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon-1" id="Tools-icon-9" src="/assests/skil-icons/github(1).png" alt="git hub icon">
+                <p class="Tools-name" id="tools-name-9">GIT HUB</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon-1" id="Tools-icon-10" src="/assests/skil-icons/hibernate-logo-icons.png" alt="hibernate-logo-icons">
+                <p class="Tools-name" id="tools-name-9">HIBERNATE</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon-1" id="Tools-icon-11" src="/assests/skil-icons/javafx-scene-builder.png" alt="scene builder icon">
+                <p class="Tools-name" id="tools-name-8">SCENE BUILDER</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon-1" id="Tools-icon-12" src="/assests/skil-icons/node js.png" alt="node js icon">
+                <p class="Tools-name" id="tools-name-7">NODE JS</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon-1" id="Tools-icon-13" src="/assests/skil-icons/social.png" alt="git icon">
+                <p class="Tools-name" id="tools-name-6">GIT</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon-1" id="Tools-icon-14" src="/assests/skil-icons/programing.png" alt="">
+                <p class="Tools-name" id="tools-name-5">NPM</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon-1" id="Tools-icon-15" src="/assests/skil-icons/word.png" alt="word icon">
+                <p class="Tools-name" id="tools-name-4">WORD</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon-1" id="Tools-icon-16" src="/assests/skil-icons/excel.png" alt="excel icon">
+                <p class="Tools-name" id="tools-name-3">EXCEL</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon-1" id="Tools-icon-17" src="/assests/skil-icons/powerpoint.png" alt="powerpoint icon">
+                <p class="Tools-name" id="tools-name-2">POWER POINT</p>
+            </div>
+            <div class="icon-data">
+                <img class="code-icon-1" id="Tools-icon-18" src="/assests/skil-icons/microsoft-access.png" alt="access icon">
+                <p class="Tools-name" id="tools-name-1">ACCESS</p>
+            </div>
+        </div>
+    </section>
+
     <!-- ========================= Service =========== -->
     <section id="service" class="service">
         <h2>Service</h2>
@@ -193,66 +246,74 @@
     <!-- =================== Resume =================== -->
      <section id="resume" class="resume">
         <h2>Resume</h2>
-        <div>
-            <p>
-                <strong>2024 - 2025</strong>
-                <br/>
-                <span>
-                    <img src="/assests/logo/ijse.png" 
-                    alt="IJSE logo png"
-                    style="width: 76px; height: 15px; object-fit: cover;">
-                </span>
-                <strong>
-                    Institute of Software Engineering
-                </strong>
-                <br/>
-                <span>
-                    <img src="/assests/logo/graduate-diploma-in-software-engineering.png" 
-                    alt="Ijse graduate Diploma in software ingineering png 'GDSE logo'"
-                    style="width: 32px; height: 10px;">
-                </span>
-                <ul>
-                    <li>
-                        Software Engineering course
-                    </li>
-                </ul>
-            </p>
-        </div>
-        <div>
-            <p>
-                <strong>2022 - 2023</strong>
-                <br/>
-                <strong>
-                    Open university of sri Lanka
-                </strong>
-                <span>
-                    <img src="/assests/logo/Logo-OUSL-tnsp.png" 
-                    alt="Open universitu logo"
-                    style="width: 31px; height: 46px;">
-                </span>
-                <ul>
-                    <li>
-                        Information Technology course
-                    </li>
-                </ul>
-                <br/>
-            </p>
-        </div>
-        <div>  
-            <p>
-                <strong>2019 - 2021</strong>
-                <br/>
-                <span>
-                    <img src="/assests/logo/images-removebg-preview.png" 
-                    alt="MR/ Shariputhra secondary school logo"
-                    style="width: 39px; height: 42px;">
-                </span>
-                <ul>
-                    <li>
-                        O/L & A/L passed  (Technology)
-                    </li>
-                </ul>
-            </p>
+        <div class="resume-pack">
+            <div class="resume-space">
+                <div class="resume-left">
+                    <div class="resume-container">
+                        <p class="resume-year-left">
+                            <strong>2024 - 2025</strong>
+                        </p>
+                        <div class="resume-place">
+                            <img id="ijse-logo" src="/assests/logo/ijse.png" alt="">
+                            <p class="resume-place-name"><b>Institute of Software Engineering</b></p>
+                        </div>
+                        
+                        <div class="resume-details-container">
+                            <div class="resume-details">
+                                <img id="gdse-logo" src="/assests/logo/graduate-diploma-in-software-engineering.png" alt="">
+                                <p>
+                                    <ul><li class="course-name">Software Engineering course</li></ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="resume-container">
+                        <p class="resume-year-left">
+                            <strong>2007 - 2021</strong>
+                        </p>
+                        <div class="resume-place">
+                            <img id="scl-logo" src="/assests/logo/images-removebg-preview.png" alt="">
+                            <p class="resume-place-name"><b>MR/ Shariputhra National school</b></p>
+                        </div>
+                        <div class="resume-details-container">
+                            <div class="resume-details">
+                                <img id="al-logo" src="/assests/logo/AL logo.png" alt="">
+                                <p>
+                                    <ul><li class="course-name">O/L & A/L passed  (Technology)</li></ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="horizontail-line">
+                    <div class="small-circle"></div>
+                    <div class="small-circle"></div>
+                    <div class="small-circle"></div>
+                </div>
+    
+                <div class="resume-right">
+                    <div class="resume-container">
+                        <p class="resume-year-right">
+                            <strong>2022 - 2023</strong>
+                        </p>
+                        <div class="resume-place" id="resume-place">
+                            <img id="ousl-logo" src="/assests/logo/Logo-OUSL-tnsp.png" alt="">
+                            <p class="resume-place-name"><b>Open university of sri Lanka</b></p>
+                        </div>
+                        <div class="resume-details-container">
+                            <div class="resume-details" id="resume-details">
+                                <img id="it-logo" src="/assests/logo/it digree logo.png" alt="">
+                                <p>
+                                    <ul><li class="course-name">Information Technology course</li></ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
      </section>
      <!-- =================Projects ================= -->
@@ -286,54 +347,35 @@
       </section>
       <!-- ================= Contact =============== -->
        <section id="contact" class="contact">
-            <h2>Hire me</h2>
-            <div class="contacting-aria">
-                <div class="contract-box">
-                    <img src="/assests/images/handshake2-800x450.jpg" 
-                    alt="handshake two mens">
-                    <p>
-                        I am Available for Web Designing & Web 
-                        <br/>
-                        Development work.
-                        <br/> 
-                        Connect With me email :
-                        <br/>
-                        <a href="mailto:navidu200210@gmail.com" target="_blank"><b><u>navidu200210@gmail.com</u></b></a>  
-                    </p>
-                </div>
+        <h2>Hire me</h2>
+        <img src="/assests/images/contact map.jpg" alt="">
+        
+        <div class="contract">
+            <p><span>
+                I am Available for Designing & Development work.
+                <br/> 
+                Connect With me email :
+                <br/>
+            </span>
+                
+                <a href="mailto:navidu200210@gmail.com" target="_blank"><b><u>navidu200210@gmail.com</u></b></a>  
+            </p>
+            <form action="/submit-form">
                 <div class="contact-form">
-                    <form action="/submit-form">
-                        <div class="input">
-                            <label for="your name">Your name</label>
-                            <br/>
-                            <input type="text" name="your name" required placeholder="ex: Davide Miller">
-                        </div>
-                        <div class="input">
-                            <label for="your email">Your email</label>
-                            <br/>
-                            <input type="text" name="your email" required placeholder="ex: examlple@gmail.com ">    
-                        </div>
-                        <div class="input">
-                            <label for="write subject">write subject</label>
-                            <br/>
-                            <input type="text" name="write subject" required placeholder="ex: we have job vacancy ">    
-                        </div>
-                        <div class="input">
-                            <label for="your massage">your massage</label>
-                        <br/>
-                            <textarea name="your massage" id="massage"
-                                placeholder="ex: input your text"
-                                required></textarea>
-                        </div>
-                        <br/>
-                        <button onclick="alert('Submit sucsesful')">Submit</button>
-                    </form>
-                    <br/>
+                    <div class="contact-left-side">
+                        <input type="text" placeholder="Ente your full name">
+                        <input type="text" placeholder="Your Email">
+                        <input type="text" placeholder="Your phone number">
+                    </div>
+                    <textarea name="textarea" id="textarea" placeholder="Write your massage"></textarea>
                 </div>
-            </div>
+                <button>Submit</button>
+            </form>
+        </div>
         </section>
     </main>
 
+        <!-- =============== footer =============== -->
     <footer>
         <div>
             <p><span class="text1">DU</span><span class="text2">$AN</span></p>

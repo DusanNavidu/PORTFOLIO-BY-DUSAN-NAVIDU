@@ -1,4 +1,5 @@
 .projects{
+    padding-top: 100px;
     background-color: #0F0F0F;
     padding-bottom: 100px;
 }
@@ -36,4 +37,72 @@
 .project-sets{
     display: flex;
     justify-content: center;
+}
+
+
+/* responsive */
+
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+    .project-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding-top: 50px;
+        column-gap: 60px;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .project-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        padding-top: 50px;
+        row-gap: 60px;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px){
+    .project-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        padding-top: 50px;
+        row-gap: 60px;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px){
+    .project-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        padding-top: 50px;
+        row-gap: 60px;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .project-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        padding-top: 50px;
+        row-gap: 60px;
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 374px){
+    .project-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        padding-top: 50px;
+        row-gap: 60px;
+        width: 90%;
+    }
 }

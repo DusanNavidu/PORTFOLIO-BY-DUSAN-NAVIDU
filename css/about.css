@@ -1,30 +1,80 @@
 .about{
+    padding-top: 100px;
     width: 100%;
-    background-color: #1D1D21;
+    background-color: #0F0F0F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-all{
+    padding-top: 50px;
+}
+
+.about-in{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-image img{
+    display: flex;
+    justify-content: end;
+}
+
+.button-group{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-container{
     display: flex;
     justify-content: center;
 }
 
-h2{
-    color: #ffffff;
+.about-me-details{
+    width: 600px;
+    color: white;
     text-align: center;
-    padding-top: 10px;
+    align-items: center;
 }
 
-#p1{
-    text-align: center;
-    width: 564px;
-    color: #ffffff;
+.about-me{
+    display: flex;
+    justify-content: center;
 }
 
-#about-img{
+.main-skills{
+    color: #0EC1F9;
 }
 
-h4{
-    color: #ffffff;
+a{
+    text-decoration: none;
 }
 
-#text{
-    color: #ffffff;
-    line-height: 35px;
+#main-skills{
+    width: 500px;
+    color: white;
+}
+
+#education{
+    width: 500px;
+    color: white;
+}
+
+.education{
+    color: white;
+}
+
+.skil-set{
+    display: flex;
+    justify-content: center;
+}
+
+.education-set{
+    opacity: 0;
+    margin-top: -192px;
+    display: flex;
+    justify-content: center;
 }

@@ -1,74 +1,78 @@
 body{
-    margin: 0px;
+    margin: 0;
 }
 
 .header{
     width: 100%;
-    background-color: #0F0F0F;
     position: fixed;
-    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.25);
-}
-
-#head-list{
-    list-style: none;
+    top: 0;
+    left: 0;
+    background-color: #0F0F0F;
+    z-index: 1;
     display: flex;
-    flex-wrap: wrap;
-}
-
-i{
-    color: #0EC1F9;
-}
-
-#head-bar-list{
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 20px;
-
-    display: flex;
-    align-items: center;
-}
-
-#logoImg{
-    width: 131px;
-}
-
-#head-icon{
-    width: 25px;
-    padding-right: 10px;
-}
-
-.headBar{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 5px;
-}
-
-#talk-button{
-    background-color: #0F0F0F;
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    border-radius: 5px;
-    width: 84px;
-    height: 24px;
-}
-
-#Social_icon{
-    text-decoration: none;
-    padding-left: 5px;
 }
 
 .logo-text1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 1px 1px 2px #0EC1F9;
+    font-weight: 900;
+    font-size: 2em;
     color: white;
-    font-weight: 600;
-    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .logo-text2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 1px 1px 2px white;
     color: #0EC1F9;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.social button{
+    background-color: #0F0F0F;
+    border: 1px solid white;
+    width: 80px;
+    height: 25px;
+    border-radius: 5px;
+    color: white;
+}
+
+.nav-links-2{
+    display: flex;
+    gap: 5px;
+    list-style: none;
+}
+
+.nav-links-2 li img{
+    height: 25px;
+    width: 25px;
+    text-decoration: none;
+}
+
+.nav-links-1 li a{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links-1 li a img{
+    width: 25px;
+    height: 25px;
+}
+
+.nav-links-1{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    list-style: none;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

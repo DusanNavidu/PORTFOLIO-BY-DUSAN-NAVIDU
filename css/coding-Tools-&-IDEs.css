@@ -1,0 +1,151 @@
+.coding-tools-IDEs{
+    width: 100%;
+    padding-top: 100px;
+    background-color: #1D1D21;
+    padding-bottom: 50px;
+
+    position: relative;
+}
+
+.code-icon{
+    width: 100px;
+
+    animation-name: pop-up;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.section-icon{
+    width: 50px;
+}
+#code-icon-1{
+    animation-delay: 1s;
+}
+
+#code-icon-2{
+    animation-delay: 2s;
+}
+
+#code-icon-3{
+    animation-delay: 3s;
+}
+
+#code-icon-4{
+    animation-delay: 4s;
+}
+
+#code-icon-5{
+    animation-delay: 5s;
+}
+
+#code-icon-6{
+    animation-delay: 6s;
+}
+
+@keyframes pop-up{
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.2;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    color: white;
+}
+
+.icon-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.section-set{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.line-horizontal{
+    width: 70%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.code-icon-1{
+    width: 50px;
+    
+}
+
+.Tools-name{
+    padding: 5px;
+    border: 1px solid white;
+
+    animation-name: background-color-drop;
+    animation-timing-function: ease-in-out;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes background-color-drop{
+    0%{
+    }
+    50%{
+        background-color: rgb(14, 193, 249 , 0.3);
+    }
+    100%{
+    }
+}
+
+#tools-name-1{
+    animation-delay: 1s;
+}
+
+#tools-name-2{
+    animation-delay: 2s;
+}
+
+#tools-name-3{
+    animation-delay: 3s;
+}
+
+#tools-name-4{
+    animation-delay: 4s;
+}
+
+#tools-name-5{
+    animation-delay: 5s;
+}
+
+#tools-name-6{
+    animation-delay: 6s;
+}
+
+#tools-name-7{
+    animation-delay: 7s;
+}
+
+#tools-name-8{
+    animation-delay: 8s;
+}
+
+#tools-name-9{
+    animation-delay: 9s;
+}
