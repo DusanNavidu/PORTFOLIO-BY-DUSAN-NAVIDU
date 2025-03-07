@@ -6,75 +6,166 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-.about-all{
-    padding-top: 50px;
+h2{
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.about-in{
-    display: flex;
-    justify-content: space-around;
-}
-
-.about-image img{
-    display: flex;
-    justify-content: end;
-}
-
-.button-group{
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.btn-container{
-    display: flex;
-    justify-content: center;
-}
-
-.about-me-details{
-    width: 600px;
+.about-me-paragraph-2{
+    width: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
-    text-align: center;
-    align-items: center;
 }
 
-.about-me{
+.about-me-paragraph-1{
+    width: 600px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white; 
+    font-size: 1rem;
+}
+
+.about-section{
     display: flex;
-    justify-content: center;
+    width: 900px;
+    font-size: 1rem;
 }
 
-.main-skills{
+#about-me-word{
     color: #0EC1F9;
 }
 
-a{
-    text-decoration: none;
+
+/* ============== responsive ================ */
+
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+    .about-me-paragraph-2{
+        width: 400px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+    }
+    
+    .about-me-paragraph-1{
+        width: 500px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white; 
+        font-size: 1rem;
+    }
 }
 
-#main-skills{
-    width: 500px;
-    color: white;
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .about-section{
+        width: 700px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .about-right-side{
+        width: 300px;
+    }
+    .about-me-paragraph-1{
+        width: 500px;
+        text-align: center;
+    }
+    .about-me-paragraph-2{
+        width: 500px;
+        text-align: center;
+    }
+    .about{
+        padding-bottom: 50px;
+    }
 }
 
-#education{
-    width: 500px;
-    color: white;
+@media screen and (min-width: 425px) and (max-width: 767px){
+    .about-section{
+        width: 400px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .about-right-side{
+        width: 300px;
+    }
+    .about-me-paragraph-1{
+        width: 400px;
+        text-align: center;
+    }
+    .about-me-paragraph-2{
+        width: 400px;
+        text-align: center;
+    }
+    .about{
+        padding-bottom: 50px;
+    }
 }
 
-.education{
-    color: white;
+@media screen and (min-width: 375px) and (max-width: 424px){
+    .about-section{
+        width: 350px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .about-right-side{
+        width: 300px;
+    }
+    .about-me-paragraph-1{
+        width: 350px;
+        text-align: center;
+    }
+    .about-me-paragraph-2{
+        width: 350px;
+        text-align: center;
+    }
+    .about{
+        padding-bottom: 50px;
+    }
 }
 
-.skil-set{
-    display: flex;
-    justify-content: center;
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .about-section{
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .about-right-side{
+        width: 60vw;
+    }
+    .about-me-paragraph-1{
+        width: 300px;
+        text-align: center;
+    }
+    .about-me-paragraph-2{
+        width: 300px;
+        text-align: center;
+    }
+    .about{
+        padding-bottom: 50px;
+    }
 }
 
-.education-set{
-    opacity: 0;
-    margin-top: -192px;
-    display: flex;
-    justify-content: center;
+@media screen and (min-width: 0px) and (max-width: 319px){
+    .about-section{
+        width: 95vw;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .about-right-side{
+        width: 60vw;
+    }
+    .about-me-paragraph-1{
+        width: 90vw;
+        text-align: center;
+    }
+    .about-me-paragraph-2{
+        width: 90vw;
+        text-align: center;
+    }
+    .about{
+        padding-bottom: 50px;
+    }
 }

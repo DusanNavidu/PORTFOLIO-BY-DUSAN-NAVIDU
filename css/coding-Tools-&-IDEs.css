@@ -2,14 +2,13 @@
     width: 100%;
     padding-top: 100px;
     background-color: #1D1D21;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 
     position: relative;
 }
 
 .code-icon{
     width: 100px;
-
     animation-name: pop-up;
     animation-timing-function: ease-in-out;
     animation-duration: 6s;
@@ -17,7 +16,7 @@
 }
 
 .section-icon{
-    width: 50px;
+    width: 2.5rem;
 }
 #code-icon-1{
     animation-delay: 1s;
@@ -60,6 +59,8 @@
     align-items: center;
     justify-content: center;
     padding-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
     color: white;
 }
 
@@ -68,6 +69,8 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
     color: white;
 }
 
@@ -148,4 +151,96 @@
 
 #tools-name-9{
     animation-delay: 9s;
+}
+
+.coding-tools-IDEs-introduse-paragraph{
+    width: 700px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px){
+    .coding-tools-IDEs-introduse-paragraph{
+        width: 400px;
+    }
+    .code-icon{
+        width: 80px;
+    }
+    .Tools-name{
+        font-size: 0.8rem;
+        padding: 3px;
+    }
+    .section-set{
+        gap: 10vw;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px){
+    .coding-tools-IDEs-introduse-paragraph{
+        width: 350px;
+    }
+    .code-icon{
+        width: 60px;
+    }
+    .code-icon-1{
+        width: 40px;
+    }
+    .Tools-name{
+        font-size: 0.8rem;
+        padding: 3px;
+    }
+    .section-set{
+        gap: 10vw;
+    }
+    .section-icon{
+        width: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .coding-tools-IDEs-introduse-paragraph{
+        width: 90vw;
+    }
+    .code-icon{
+        width: 40px;
+    }
+    .code-icon-1{
+        width: 30px;
+    }
+    .Tools-name{
+        font-size: 0.7rem;
+        padding: 3px;
+    }
+    .section-set{
+        gap: 10vw;
+    }
+    .section-icon{
+        width: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 319px){
+    .coding-tools-IDEs-introduse-paragraph{
+        text-align: center;
+        width: 90vw;
+    }
+    .code-icon{
+        width: 10vw;
+    }
+    .code-icon-1{
+        width: 8vw;
+    }
+    .Tools-name{
+        font-size: 0.6rem;
+        padding: 3px;
+    }
+    .section-set{
+        gap: 10vw;
+    }
+    .section-icon{
+        width: 1rem;
+    }
 }

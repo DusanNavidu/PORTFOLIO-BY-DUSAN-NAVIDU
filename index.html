@@ -18,17 +18,18 @@
 </head>
 <body>
 <header id="header" class="header">
-    <div>
+    <div id="my-logo">
         <p><span class="logo-text1">DU</span><span class="logo-text2">$AN</span></p>
     </div>
     <nav class="navigation-sections">
         <ul class="nav-links-1">
-            <li><a href="#home"><img src="/assests/icons/home-icon-silhouette.png" alt=""> Home</a></li>
-            <li><a href="#about"><img src="/assests/icons/id-card.png" alt="">About</a></li>
-            <li><a href="#service"><img src="/assests/icons/man-working-on-a-laptop-from-side-view.png" alt="">Service</a></li>
-            <li><a href="#resume"><img src="/assests/icons/working-time.png" alt="">Resume</a></li>
-            <li><a href="#projects"><img src="/assests/icons/project.png" alt="">Project</a></li>
-            <li><a href="#contact"><img src="/assests/icons/contact-mail.png" alt="">Contact</a></li>
+            <li><a class="content-animation-01" href="#home"><img src="/assests/icons/home-icon-silhouette.png" alt=""> Home</a></li>
+            <li><a class="content-animation-01" href="#about"><img src="/assests/icons/id-card.png" alt="">About</a></li>
+            <li><a class="content-animation-01" href="#coding-tools-IDEs"><img src="/assests/icons/solution.png" alt="">Skils</a></li>
+            <li><a class="content-animation-01" href="#service"><img src="/assests/icons/man-working-on-a-laptop-from-side-view.png" alt="">Service</a></li>
+            <li><a class="content-animation-01" href="#resume"><img src="/assests/icons/working-time.png" alt="">Resume</a></li>
+            <li><a class="content-animation-01" href="#projects"><img src="/assests/icons/project.png" alt="">Project</a></li>
+            <li><a class="content-animation-01" href="#contact"><img src="/assests/icons/contact-mail.png" alt="">Contact</a></li>
         </ul>
     </nav>
     <div class="social">
@@ -40,9 +41,22 @@
                 <li><img src="/assests/icons/instagram.png" alt=""></li>
             </ul>
         </nav>
-        <button>Let's Talk</button>
+        <button id="header-talk-btn">Let's Talk</button>
+        <img id="burger" aria-hidden="true" src="/assests/icons/menus.png" alt="mrnu icon">
+        <nav class="menu-panel" id="menu-panel-id">
+            <button class="close-btn" id="btn-close">&times;</button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#coding-tools-IDEs">Skils</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
-            
+    <script src="/js/header.js"></script>
 </header>
 
 <!-- ====================Main=================== -->
@@ -53,39 +67,78 @@
             <div id="img-circle" class="img-circle">
                 <img class="home-image" id="home-image" src="/assests/images/DSC_0672-removebg-preview - Copy.png" alt="Dusan Navidu home image">
             </div>
-            <div class="home-texts">
+            <div class="home-text-set">
                 <p id="welcome">
                     WELCOME TO MY PORTFOLIO 
                 </p>
-                <h1 class="home-text">
-                    <span id="white-text">I’m DUSAN NAVIDU</span> 
-                    <br/>
-                    <span id="blue-text">SOFTWARE ENGINEER.</span>
+                <div class="my-name">
+                    <div id="name-introduce">
+                        My name is
+                    </div>
+                    <ul id="my-name">
+                        <li>D</li>
+                        <li>U</li>
+                        <li>S</li>
+                        <li>A</li>
+                        <li>N</li>
+                        <li>&nbsp;</li>
+                        <li>N</li>
+                        <li>A</li>
+                        <li>V</li>
+                        <li>I</li>
+                        <li>D</li>
+                        <li>U</li>
+                     </ul>
+                </div>
+                     
                 </h1>
+                <div class="roll-container">
+                    <span class="text first-text">I'am a&nbsp;</span>
+                    <span class="text second-text"></span>
+                </div>
+                <script src="/js/home.js"></script>
             </div>
+        </div>
+        <div class="navigation-social-home-set">
+            <nav class="navigation-social-home">
+                <ul class="nav-links-social-home">
+                    <li><img src="/assests/icons/github.png" alt=""></li>
+                    <li><img src="/assests/icons/linkedin.png" alt=""></li>
+                    <li><img src="/assests/icons/facebook.png" alt=""></li>
+                    <li><img src="/assests/icons/instagram.png" alt=""></li>
+                </ul>
+            </nav>
+            <button id="home-contact-btn">Let's Talk</button>
         </div>
     </section>
 
     <!-- ================About me ================= -->
     <section id="about" class="about">
-        <h2>About</h2> 
-        <p class="about-me-paragraph-1">
-            Hello, I am G.Dusan Navidu, I am 21 years old, I am currently studying in a software engineering institute to become a
-            professional software engineer. I hope to become a software engineer soon.
-        </p>
-        <p class="about-me-paragraph-2">
-            I have the ability to work with Java, JavaScript, HTML, CSS, and MySQL. I have experience in web design, standalone
-            application development, and web development. I primarily use IntelliJ IDEA and VS Code as my development tools.
-            Additionally, I work with frameworks like Bootstrap to create visually appealing and responsive web interfaces. My
-            knowledge extends to both front-end and back-end development, allowing me to build full-stack applications. I focus on
-            developing high-quality, scalable solutions that meet user needs. Whether it's designing interactive websites or
-            building robust software applications, I am dedicated to delivering efficient and well-structured projects.
-        </p>
+        <h2>About <span id="about-me-word">me...</span></h2> 
+        <div class="about-section">
+            <div class="about-left-side">
+                <p class="about-me-paragraph-1">
+                    Hello, I am G.Dusan Navidu, I am 21 years old, I am currently studying in a software engineering institute to become a
+                    professional software engineer. I hope to become a software engineer soon.
+                </p>
+                <p class="about-me-paragraph-2">
+                    I have the ability to work with Java, JavaScript, HTML, CSS, and MySQL. I have experience in web design, standalone
+                    application development, and web development. I primarily use IntelliJ IDEA and VS Code as my development tools.
+                    Additionally, I work with frameworks like Bootstrap to create visually appealing and responsive web interfaces. My
+                    knowledge extends to both front-end and back-end development, allowing me to build full-stack applications. I focus on
+                    developing high-quality, scalable solutions that meet user needs. Whether it's designing interactive websites or
+                    building robust software applications, I am dedicated to delivering efficient and well-structured projects.
+                </p>
+            </div>
+            <img class="about-right-side" src="/assests/images/WhatsApp_Image_2025-01-14_at_20.32.49_f7c91466-removebg-preview.png" alt="about image">    
+        </div>
     </section>
 
     <!-- =============== Coding Tools & IDEs ==========  -->
     <section id="coding-tools-IDEs" class="coding-tools-IDEs">
         <h2>Coding Tools & IDEs</h2>
+        
+
         <div class="section">
             <img class="section-icon" src="/assests/skil-icons/programming.png" alt="programming desc top icon">
             <p>🚀   Coding</p>
@@ -198,6 +251,10 @@
                 <p class="Tools-name" id="tools-name-1">ACCESS</p>
             </div>
         </div>
+        <p class="coding-tools-IDEs-introduse-paragraph">
+            I am capable of using coding tools and IDEs like IntelliJ IDEA, VS Code, and frameworks such as Bootstrap to develop
+            efficient and responsive applications.
+        </p>
     </section>
 
     <!-- ========================= Service =========== -->
@@ -249,7 +306,7 @@
         <div class="resume-pack">
             <div class="resume-space">
                 <div class="resume-left">
-                    <div class="resume-container">
+                    <div class="resume-container" id="resume-container-1">
                         <p class="resume-year-left">
                             <strong>2024 - 2025</strong>
                         </p>
@@ -269,7 +326,7 @@
                     </div>
                     
                     
-                    <div class="resume-container">
+                    <div class="resume-container" id="resume-container-2">
                         <p class="resume-year-left">
                             <strong>2007 - 2021</strong>
                         </p>
@@ -342,6 +399,27 @@
                         Creating a portfolio website
                     </p>
                 </div>
+                <div class="project-card">
+                    <img src="/assests/images/Screenshot 2025-03-06 053127.png" 
+                    alt="Shaan fashion order page image">
+                    <p>
+                        Shaan fashion MVC POS system update to layerd Architechure.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <img src="/assests/images/Screenshot 2025-03-06 051930.png" 
+                    alt="the author home page image">
+                    <p>
+                        "The author" story reading web site ( without frame works ).
+                    </p>
+                </div>
+                <div class="project-card">
+                    <img src="/assests/images/hilltown-hotel-website-template.jpg" 
+                    alt="Hotel site home page image">
+                    <p>
+                        Hotel site , use frame works (bootstrap).
+                    </p>
+                </div>
             </div>
         </div>
       </section>
@@ -351,21 +429,22 @@
         <img src="/assests/images/contact map.jpg" alt="">
         
         <div class="contract">
-            <p><span>
-                I am Available for Designing & Development work.
-                <br/> 
-                Connect With me email :
-                <br/>
-            </span>
-                
+            <div id="hire-box">
+                <p><span>
+                    I am Available for Designing & Development work.
+                    <br/> 
+                    Connect With me email :
+                    <br/>
+                </span>
                 <a href="mailto:navidu200210@gmail.com" target="_blank"><b><u>navidu200210@gmail.com</u></b></a>  
             </p>
+            </div>
             <form action="/submit-form">
                 <div class="contact-form">
                     <div class="contact-left-side">
-                        <input type="text" placeholder="Ente your full name">
-                        <input type="text" placeholder="Your Email">
-                        <input type="text" placeholder="Your phone number">
+                        <input class="input-fields" type="text" placeholder="Ente your full name">
+                        <input class="input-fields"  type="text" placeholder="Your Email">
+                        <input class="input-fields"  type="text" placeholder="Your phone number">
                     </div>
                     <textarea name="textarea" id="textarea" placeholder="Write your massage"></textarea>
                 </div>

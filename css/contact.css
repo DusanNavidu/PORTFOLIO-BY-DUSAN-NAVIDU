@@ -1,7 +1,7 @@
 .contact{
     padding-top: 100px;
     background-color: #1D1D21;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,13 +25,15 @@
     align-items: center;
 }
 
-.contract p{
-    background-color: rgb(214, 214, 214 , 0.3);
+#hire-box{
     padding: 25px;
-    border-radius: 10px;
+    width: 500px;
     border: 1px solid white;
-    font-weight: 900;
+    background-color: rgb(214, 214, 214 , 0.3);
+    border-radius: 10px;
+}
 
+.contract p{
     text-align: center;
 }
 
@@ -74,6 +76,10 @@ form{
     color: white;
 }
 
+.contact-left-side input:hover{
+    box-shadow: 0 0 5px rgb(235, 243, 243);
+}
+
 input::placeholder {
     color: red;
     font-size: 1rem;
@@ -95,6 +101,10 @@ textarea{
     color: white;
 }
 
+textarea:hover{
+    box-shadow: 0 0 5px rgb(235, 243, 243);
+}
+
 form button{
     height: 30px;
     border-radius: 5px;
@@ -105,9 +115,168 @@ form button{
     font-style: italic;
 }
 
+form button:hover{
+    box-shadow: 0 0 5px cyan , 0 0 5px cyan , 0 0 5px cyan;
+}
+
 @media screen and (min-width: 1440px){
     .contact img{
         margin-top: 50px;
         width: 70%;
+    }
+    #hire-box{
+        padding: 25px;
+        width: 700px;
+        border: 1px solid white;
+        background-color: rgb(214, 214, 214 , 0.3);
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+    #hire-box{
+        width: 600px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    #hire-box{
+        width: 500px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
+    .contact-left-side input{
+        width: 250px;
+    }
+    textarea{
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px){
+    #hire-box{
+        width: 60vw;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-left-side input{
+        width: 60vw;
+        height: 6vw;
+    }
+    textarea{
+        width: 60vw;
+        height: 15vw;
+    }
+    .contract{
+        margin-top: 50px;
+    }
+    .contact{
+        padding-bottom: 200px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px){
+    #hire-box{
+        width: 60vw;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-left-side input{
+        width: 60vw;
+        height: 6vw;
+    }
+    textarea{
+        width: 60vw;
+        height: 15vw;
+    }
+    .contract{
+        margin-top: 50px;
+    }
+    .contact{
+        padding-bottom: 200px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px){
+    #hire-box{
+        width: 60vw;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-left-side input{
+        width: 60vw;
+        height: 6vw;
+    }
+    textarea{
+        width: 60vw;
+        height: 15vw;
+    }
+    .contract{
+        margin-top: 50px;
+    }
+    .contact{
+        padding-bottom: 200px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 319px){
+    #hire-box{
+        width: 50vw;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-left-side input{
+        width: 60vw;
+        height: 6vw;
+    }
+    textarea{
+        width: 60vw;
+        height: 15vw;
+    }
+    .contract{
+        margin-top: 50px;
+    }
+    .contact{
+        padding-bottom: 200px;
+    }
+    .contract p a{
+        font-size: 0.8rem;
+    }
+    .contract p span{
+        font-size: 0.6rem;
+    }
+    input::placeholder {
+        font-size: 0.7rem;
+    }
+    
+    textarea::placeholder{
+        font-size: 0.7rem;
+    }
+    form button{
+        height: 20px;
+        font-size: 0.7rem;
     }
 }

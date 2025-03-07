@@ -20,11 +20,11 @@ footer{
 }
 
 .ending{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
 }
 
 .social-icon a img{
-    padding-left: 10px;
     width: 30px;
     padding-bottom: 10px;
 }
@@ -49,12 +49,18 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    .social-icon a img{
+        width: 24px;
+    }
 }
 
 @media screen and (min-width: 375px) and (max-width: 424px){
     footer{
         display: flex;
         flex-direction: column;
+    }
+    .social-icon a img{
+        width: 20px;
     }
 }
 
@@ -63,11 +69,17 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    .social-icon a img{
+        width: 20px;
+    }
 }
 
-@media screen and (min-width: 0px) and (max-width: 374px){
+@media screen and (min-width: 0px) and (max-width: 319px){
     footer{
         display: flex;
         flex-direction: column;
+    }
+    .social-icon a img{
+        width: 20px;
     }
 }
