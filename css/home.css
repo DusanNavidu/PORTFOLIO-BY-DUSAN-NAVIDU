@@ -49,6 +49,10 @@
     border-radius: 50%;
 }
 
+.home-image:hover{
+    box-shadow: 5px 5px 5px;
+}
+
 #welcome{
     font-size: 0.7rem;
     color: white;
@@ -81,6 +85,15 @@
     border: 1px solid white;
     border-radius: 5px;
     color: white;
+}
+
+.navigation-social-home-set a{
+    text-decoration: none;
+}
+
+#home-contact-btn:hover{
+    background-color: white;
+    color: black;
 }
 
 .navigation-social-home-set{
@@ -167,6 +180,9 @@ li:nth-child(2){
 #my-name li:nth-child(12){
     animation-delay: 2.4s;
 }
+#my-name li:nth-child(13){
+    animation-delay: 2.6s;
+}
 
 .roll-container{
     display: flex;
@@ -220,9 +236,6 @@ li:nth-child(2){
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px){
-    .navigation-social-home-set{
-        display: none;
-    }
     #my-name li{
         font-size: 3rem;
     }
@@ -235,6 +248,9 @@ li:nth-child(2){
     .home-image{
         width: 270px;
         height: 270px;
+    }
+    #home-contact-btn{
+        display: none;
     }
 }
 

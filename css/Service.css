@@ -15,32 +15,6 @@ h2{
     border-radius: 20px;
 }
 
-/* .service-card::before{
-    content: '';
-    position: absolute;
-    width: 170px;
-    height: 140%;
-    background: linear-gradient(#0F0F0F , #ffffff);
-    animation: rotate 4s linear infinite;
-}
-
-.service-card::after{
-    content: '';
-    position: absolute;
-    background: #494949;
-    inset: 5px;
-    border-radius: 20px;
-}
-
-@keyframes rotate {
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-} */
-
 .service-card-title{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffffff;

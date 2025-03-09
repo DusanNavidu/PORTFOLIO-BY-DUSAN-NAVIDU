@@ -6,6 +6,27 @@
     <meta name="description" content="This is a home page to the portfolio.">
     <meta name="Keywords" content="HTML, html, CSS, css, Javascript, javascript, JAVASCRIPT, JS, portfolio, Portfolio, PORTFOLIO, Dusan Navidu, DUSAN NAVIDU, DUSAN, Dusan, dusan"/>
     <title>Portfolio by Dusan navidu</title>
+    <style>
+        #scrollToTopBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        display: none;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        z-index: 2;
+    }
+    #scrollToTopBtn:hover {
+        background-color: #0056b3;
+    }
+    </style>
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/about.css">
@@ -35,13 +56,13 @@
     <div class="social">
         <nav class="navigation-social">
             <ul class="nav-links-2">
-                <li><img src="/assests/icons/github.png" alt=""></li>
-                <li><img src="/assests/icons/linkedin.png" alt=""></li>
-                <li><img src="/assests/icons/facebook.png" alt=""></li>
-                <li><img src="/assests/icons/instagram.png" alt=""></li>
+                <li><a href="https://github.com/DusanNavidu" target="_blank"><img src="/assests/icons/github.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/dusan-navidu-11b9a234a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="/assests/icons/linkedin.png" alt=""></a></li>
+                <li><a href="https://www.facebook.com/share/17ZPqeFdtN/" target="_blank"><img src="/assests/icons/facebook.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/dusannavidu?igsh=bmt5ZjBtOHNmaGYz" target="_blank"><img src="/assests/icons/instagram.png" alt=""></a></li>
             </ul>
         </nav>
-        <button id="header-talk-btn">Let's Talk</button>
+        <a href="#contact"><button id="header-talk-btn">Let's Talk</button></a>
         <img id="burger" aria-hidden="true" src="/assests/icons/menus.png" alt="mrnu icon">
         <nav class="menu-panel" id="menu-panel-id">
             <button class="close-btn" id="btn-close">&times;</button>
@@ -58,7 +79,8 @@
     </div>
     <script src="/js/header.js"></script>
 </header>
-
+<button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+<script src="/js/arrow.js"></script>
 <!-- ====================Main=================== -->
 <main>
 <!-- ====================Home=================== -->
@@ -88,6 +110,7 @@
                         <li>I</li>
                         <li>D</li>
                         <li>U</li>
+                        <li>.</li>
                      </ul>
                 </div>
                      
@@ -102,13 +125,13 @@
         <div class="navigation-social-home-set">
             <nav class="navigation-social-home">
                 <ul class="nav-links-social-home">
-                    <li><img src="/assests/icons/github.png" alt=""></li>
-                    <li><img src="/assests/icons/linkedin.png" alt=""></li>
-                    <li><img src="/assests/icons/facebook.png" alt=""></li>
-                    <li><img src="/assests/icons/instagram.png" alt=""></li>
+                    <li><a href="https://github.com/DusanNavidu" target="_blank"><img src="/assests/icons/github.png" alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/in/dusan-navidu-11b9a234a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="/assests/icons/linkedin.png" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/share/17ZPqeFdtN/" target="_blank"><img src="/assests/icons/facebook.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/dusannavidu?igsh=bmt5ZjBtOHNmaGYz" target="_blank"><img src="/assests/icons/instagram.png" alt=""></a></li>
                 </ul>
             </nav>
-            <button id="home-contact-btn">Let's Talk</button>
+            <a href="#contact"><button id="home-contact-btn">Let's Talk</button></a>
         </div>
     </section>
 
@@ -384,6 +407,7 @@
                     <p>
                         A POS system was created for the clothing store called SHAAN FASHION.
                     </p>
+                    <a href="https://github.com/DusanNavidu/ShaanFashionMVC.git" target="_blank">click here open the github repository.</a>
                 </div>
                 <div class="project-card">
                     <img src="/assests/images/unnamed.png" 
@@ -391,6 +415,7 @@
                     <p>
                         Making a tic tac toe game
                     </p>
+                    <a href="https://github.com/DusanNavidu/TIC-TAC-TOE_game_OOP_java.git" target="_blank">click here open the github repository.</a>
                 </div>
                 <div class="project-card">
                     <img src="/assests/images/51dadeba-428e-4265-ba8e-bfb2bcb0cbda-cover.png" 
@@ -398,6 +423,7 @@
                     <p>
                         Creating a portfolio website
                     </p>
+                    <a href="https://github.com/DusanNavidu/PORTFOLIO-BY-DUSAN-NAVIDU.git" target="_blank">click here open the github repository.</a>
                 </div>
                 <div class="project-card">
                     <img src="/assests/images/Screenshot 2025-03-06 053127.png" 
@@ -405,6 +431,7 @@
                     <p>
                         Shaan fashion MVC POS system update to layerd Architechure.
                     </p>
+                    <a href="https://github.com/DusanNavidu/Shaan-fashion-layerd.git" target="_blank">click here open the github repository.</a>
                 </div>
                 <div class="project-card">
                     <img src="/assests/images/Screenshot 2025-03-06 051930.png" 
@@ -412,6 +439,7 @@
                     <p>
                         "The author" story reading web site ( without frame works ).
                     </p>
+                    <a href="https://github.com/DusanNavidu/the_author.git" target="_blank">click here open the github repository.</a>
                 </div>
                 <div class="project-card">
                     <img src="/assests/images/hilltown-hotel-website-template.jpg" 
@@ -419,6 +447,7 @@
                     <p>
                         Hotel site , use frame works (bootstrap).
                     </p>
+                    <a href="https://github.com/DusanNavidu/the_author.git" target="_blank">click here open the github repository.</a>
                 </div>
             </div>
         </div>
@@ -443,7 +472,7 @@
                 <div class="contact-form">
                     <div class="contact-left-side">
                         <input class="input-fields" type="text" placeholder="Ente your full name">
-                        <input class="input-fields"  type="text" placeholder="Your Email">
+                        <input class="input-fields"  type="email" placeholder="Your Email">
                         <input class="input-fields"  type="text" placeholder="Your phone number">
                     </div>
                     <textarea name="textarea" id="textarea" placeholder="Write your massage"></textarea>
@@ -453,6 +482,8 @@
         </div>
         </section>
     </main>
+
+    <!-- <img id="up-arow" src="/assests/icons/arrow.png" alt="up arow"> -->
 
         <!-- =============== footer =============== -->
     <footer>

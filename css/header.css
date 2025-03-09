@@ -37,12 +37,19 @@ body{
     height: 25px;
     border-radius: 5px;
     color: white;
+    cursor: pointer;
+}
+
+#header-talk-btn:hover{
+    background-color: white;
+    color: black;
 }
 
 .nav-links-2{
     display: flex;
     gap: 5px;
     list-style: none;
+    cursor: pointer;
 }
 
 .nav-links-2 li img{
@@ -107,6 +114,11 @@ body{
     font-size: 1.2rem;
     cursor: pointer;
     display: none;
+}
+
+#burger:hover{
+    border: 1px solid white;
+    border-radius: 5px;
 }
 
 .close-btn {
